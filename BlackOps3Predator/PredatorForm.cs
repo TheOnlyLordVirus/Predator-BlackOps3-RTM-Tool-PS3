@@ -2445,7 +2445,7 @@ namespace BlackOps3Predator
         {
             if (RPC_Enabled)
             {
-                MessageBox.Show("Exploit codded by: AssumingAgate", "Black Ops 3: Remote Code Execution");
+                // Ranks done via RME.
                 selected_client = (Convert.ToUInt16(clientMakeShiftNumaricValue.Text));
 
                 if (AllClients)
