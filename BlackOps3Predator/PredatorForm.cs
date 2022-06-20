@@ -2552,12 +2552,12 @@ namespace BlackOps3Predator
         {
             if (RPC_Enabled)
             {
-                MessageBox.Show("Exploit codded by: AssumingAgate", "Black Ops 3: Remote Code Execution");
+                // Remote Memory Editing stats RME.
                 selected_client = (Convert.ToUInt16(clientMakeShiftNumaricValue.Text));
 
                 if (AllClients)
                 {
-                    /*
+                    /* If I recall correctly the name stats only changed if the user was running CFW.
                     var name1 = 0x01F3CFF4 + 0 - 0x36C85AC4;
                     var names1 = Convert.ToDecimal(name1);
                     RPC.SV_GameSendServerCommand(-1, "i " + names1 / 4 + " " + Convert.ToDecimal(0x5E314920));
@@ -2578,6 +2578,7 @@ namespace BlackOps3Predator
                     var names5 = Convert.ToDecimal(name5);
                     RPC.SV_GameSendServerCommand(-1, "i " + names5 / 4 + " " + Convert.ToDecimal(0x21000000));
                     */
+
                     var clantag1 = 0x37EF8FD8 + 0 - 0x36C85AC4;
                     var clantags1 = Convert.ToDecimal(clantag1);
                     RPC.SV_GameSendServerCommand(-1, "i " + clantags1 / 4 + " " + Convert.ToDecimal(0x007B5E31));
